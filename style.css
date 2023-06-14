@@ -22,12 +22,40 @@ header {
     height: 15vh;
 }
 
+
 #logo img {
-    width: 140px;
-    border-radius: 50%;
+    width: 130px;
+    border-radius: 35%;
+
+    /* Agrega la animación */
+    animation: slideLogo 15s infinite linear, shineLogo 3s infinite;
 }
 
+@keyframes slideLogo {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
 
+@keyframes shineLogo {
+    0% {
+        box-shadow: 0 0 10px #F2F2F2;
+    }
+    50% {
+        box-shadow: 0 0 20px 10px #8758FF;
+    }
+    100% {
+        box-shadow: 0 0 10px #F2F2F2;
+    }
+}
+
+/* 
 #descripcion {
     width: 300px;
     height: 500px;
@@ -38,6 +66,13 @@ h2 {
     margin-top: 100px;
 }
 
+ */
+
+
+
+
+
+/*
 button {
     margin-left: 100px;
     margin-top: 30px;
@@ -46,7 +81,7 @@ button {
     color: #fff;
     border: 2px solid #fff;
     border-radius: 10px;
-}
+} */
 
 section {
     display: block;
