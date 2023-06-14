@@ -1,0 +1,107 @@
+.card_cli {
+    width: 650px;
+    height: 250px;
+    margin: 180px;
+    background-color: #011522;
+    border-radius: 8px;
+    z-index: 1;
+    position: absolute;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card_content {
+    color: white;
+}
+
+h2 {
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: Consola, monospace;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+
+
+
+
+
+
+h2:nth-child(1) {
+    animation: typingAnimation 4s steps(40) forwards;
+}
+
+h2:nth-child(2) {
+    opacity: 0;
+    animation: typingAnimation 4s steps(40) forwards, fadeInAnimation 0.3s ease-in forwards;
+    animation-delay: 4s;
+
+}
+
+h2:nth-child(3) {
+    opacity: 0;
+    animation: typingAnimation 4s steps(40) forwards, fadeInAnimation 0.3s ease-in forwards;
+    animation-delay: 8s;
+
+}
+
+h2:nth-child(4) {
+    opacity: 0;
+    animation: typingAnimation 4s steps(40) forwards, fadeInAnimation 0.3s ease-in forwards;
+    animation-delay: 12s;
+
+}
+
+@keyframes typingAnimation {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+.tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+}
+
+.circle {
+    padding: 0 4px;
+}
+
+.box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+}
+
+.red {
+    background-color: #ff605c;
+}
+
+.yellow {
+    background-color: #ffbd44;
+}
+
+.green {
+    background-color: #00ca4e;
+}
+
