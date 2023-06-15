@@ -1,7 +1,7 @@
 .card_cli {
     width: 650px;
     height: 250px;
-    margin: 180px;
+    margin: 140px;
     background-color: #011522;
     border-radius: 8px;
     z-index: 1;
@@ -20,14 +20,7 @@ h2 {
     font-family: Consola, monospace;
     overflow: hidden;
     white-space: nowrap;
-
 }
-
-
-
-
-
-
 
 h2:nth-child(1) {
     animation: typingAnimation 4s steps(40) forwards;
