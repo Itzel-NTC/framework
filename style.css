@@ -1,3 +1,8 @@
+:root {
+    --purple-color: #8758FF;
+    --blue-color: #5CB8E4;
+    --gray-color: #181818;
+}
 * {
     padding: 0;
     margin: 0;
@@ -6,61 +11,20 @@
 body {
     width: 100%;
     height: 400vh;
-    background: #5CB8E4;
-    color: #181818;
-    font-family: sans-serif;
-    text-transform: uppercase;
+    background: var(--blue-color);
+    color: var(--gray-color);
+/*     text-transform: uppercase;*/
+    font-family: 'Ubuntu', sans-serif;
 }
 
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #181818;
+    background: var(--gray-color);
     gap: 0 200px;
     width:100%;
     height: 15vh;
-}
-
-
-#logo img {
-    width: 130px;
-    border-radius: 35%;
-
-    /* Agrega la animación */
-    animation: slideLogo 15s infinite linear, shineLogo 3s infinite;
-}
-
-@keyframes slideLogo {
-    0% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(-100px);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes shineLogo {
-    0% {
-        box-shadow: 0 0 10px #F2F2F2;
-    }
-    50% {
-        box-shadow: 0 0 20px 10px #8758FF;
-    }
-    100% {
-        box-shadow: 0 0 10px #F2F2F2;
-    }
-}
-
-section {
-    display: block;
-    width: 100%;
-    height: 110vh;
-    gap: 30px 0;
-    background: #F2F2F2;
 }
 
 h1 {
@@ -75,11 +39,6 @@ button:hover {
     color: white;
     transition: 0.3s;
     cursor: pointer;
-}
-
-#image img{
-    width: 300px;
-    border-radius: 15px;
 }
 
 ul {
@@ -99,10 +58,34 @@ li a {
 }
 
 li a:hover {
-background: #8758FF;
-color: #fff;
+background: var(--purple-color);
+color: white;
 border-radius: 10px;
 border: none;
 transition: 0.2s;
 }
 
+
+
+/* buttons */
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+
+/*   .button_code {
+    display: flex;
+    align-items: center;
+  }
+  
+  .button_code svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  
+  .button_code .text {
+    margin: 0;
+  }
+   */

@@ -1,0 +1,44 @@
+:root {
+    --purple-color: #8758FF;
+    --blue-color: #5CB8E4;
+    --gray-color: #181818;
+}
+
+.button_doc {
+    display: flex;
+color: white;
+text-decoration: none;
+border: 3px solid var(--purple-color);
+padding: 10px 20px;
+font-size: 16px;
+font-weight: bold;
+border-radius: 4px;
+background: transparent;
+position: relative;
+transition: all 1s;
+overflow: hidden;
+box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.2);
+margin-left: 200px;
+margin-top: 450px;
+}
+
+.button_doc:hover {
+    color: white;
+}
+
+.button_doc::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: var(--purple-color);
+    z-index: -1;
+    transition: all 1s;
+}
+
+.button_doc:hover::before {
+    width: 160%;
+}

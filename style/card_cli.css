@@ -1,5 +1,5 @@
 .card_cli {
-    width: 650px;
+    width: 600px;
     height: 250px;
     margin: 140px;
     background-color: #011522;
@@ -17,9 +17,9 @@ h2 {
     color: white;
     margin-top: 10px;
     margin-left: 10px;
-    font-family: Consola, monospace;
     overflow: hidden;
     white-space: nowrap;
+    font-family: 'Inconsolata', monospace;
 }
 
 h2:nth-child(1) {
@@ -64,9 +64,6 @@ h2:nth-child(4) {
     }
 }
 
-
-
-
 .tools {
     display: flex;
     align-items: center;
@@ -88,13 +85,57 @@ h2:nth-child(4) {
 
 .red {
     background-color: #ff605c;
+    animation: pulse-red 3s ease-in-out infinite;
 }
 
 .yellow {
     background-color: #ffbd44;
+    animation: pulse-yellow 3s ease-in-out infinite;
+    animation-delay: 1s;
 }
 
 .green {
     background-color: #00ca4e;
+    animation: pulse-green 3s ease-in-out infinite;
+    animation-delay: 2s;
 }
+
+@keyframes pulse-red {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 96, 92, 0.8);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 96, 92, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 96, 92, 0);
+    }
+}
+
+@keyframes pulse-yellow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 189, 68, 0.8);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 189, 68, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 189, 68, 0);
+    }
+}
+
+@keyframes pulse-green {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 202, 78, 0.8);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(0, 202, 78, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 202, 78, 0);
+    }
+}
+
+
+
 

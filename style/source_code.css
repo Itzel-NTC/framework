@@ -1,0 +1,40 @@
+.button_code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 15px;
+    background-color: #181717;
+    outline: 3px #181717 solid;
+    outline-offset: -3px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+    margin-left: 500px;
+    font-family: 'Ubuntu', sans-serif;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button_code .text {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+}
+
+.button_code svg path {
+    transition: 400ms;
+}
+
+.button_code:hover {
+    background-color: transparent;
+}
+
+.button_code:hover .text {
+    color: #181717;
+}
+
+.button_code:hover svg path {
+    fill: #181717;
+}
