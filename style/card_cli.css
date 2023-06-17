@@ -1,46 +1,48 @@
-.card_cli {
+.section1 .card_cli {
     width: 600px;
-    height: 250px;
-    margin: 140px;
+    height: auto;
+    margin-left: 80px;
+    margin-bottom: 20px;
     background-color: #011522;
     border-radius: 8px;
-    z-index: 1;
-    position: absolute;
+    position: relative;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.2);
+    top: 20%;
+    transform: translateY(-50%);
 }
 
-.card_content {
+.section1 .card_content {
     color: white;
 }
 
-h2 {
+.section1 h2 {
     color: white;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
     overflow: hidden;
     white-space: nowrap;
     font-family: 'Inconsolata', monospace;
 }
 
-h2:nth-child(1) {
+.section1 h2:nth-child(1) {
     animation: typingAnimation 4s steps(40) forwards;
 }
 
-h2:nth-child(2) {
+.section1 h2:nth-child(2) {
     opacity: 0;
     animation: typingAnimation 4s steps(40) forwards, fadeInAnimation 0.3s ease-in forwards;
     animation-delay: 4s;
 
 }
 
-h2:nth-child(3) {
+.section1 h2:nth-child(3) {
     opacity: 0;
     animation: typingAnimation 4s steps(40) forwards, fadeInAnimation 0.3s ease-in forwards;
     animation-delay: 8s;
 
 }
 
-h2:nth-child(4) {
+.section1 h2:nth-child(4) {
     opacity: 0;
     animation: typingAnimation 4s steps(40) forwards, fadeInAnimation 0.3s ease-in forwards;
     animation-delay: 12s;
@@ -63,6 +65,21 @@ h2:nth-child(4) {
         opacity: 1;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .tools {
     display: flex;
@@ -135,7 +152,3 @@ h2:nth-child(4) {
         box-shadow: 0 0 0 0 rgba(0, 202, 78, 0);
     }
 }
-
-
-
-

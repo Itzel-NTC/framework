@@ -1,15 +1,14 @@
-#funtion {
-    height: 800px;
-    margin-top: 650px;
-    background-color: #181818;
-    padding: 0px;
-    z-index: -1;
+:root {
+    --purple-color: #8758FF;
+    --blue-color: #5CB8E4;
+    --gray-color: #181818;
+    --white-color: #F2F2F2;
 }
 
-.grid-container {
+.section2 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Dos columnas con igual anchura */
-/*     gap: 50px; espacio */
+    grid-template-columns: repeat(4, 1fr);
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .card_frame:nth-child(1) {
@@ -19,11 +18,11 @@
     justify-content: center;
     width: 300px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    padding: 30px;
+    padding: 10px;
     overflow: hidden;
     border-radius: 30px;
     transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
-    margin-left:50px;
+    margin-left: 50px;
     margin-top: 210px;
     z-index: 1;
 }
@@ -35,7 +34,7 @@
     justify-content: center;
     width: 300px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    padding: 30px;
+    padding: 10px;
     overflow: hidden;
     border-radius: 30px;
     transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
@@ -51,7 +50,7 @@
     justify-content: center;
     width: 300px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    padding: 30px;
+    padding: 10px;
     overflow: hidden;
     border-radius: 30px;
     transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
@@ -67,7 +66,7 @@
     justify-content: center;
     width: 300px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    padding: 30px;
+    padding: 10px;
     overflow: hidden;
     border-radius: 30px;
     transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
@@ -127,7 +126,7 @@
     font-weight: 600;
     border: none;
     cursor: pointer;
-    background: #8758FF;
+    background: var(--purple-color);
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
@@ -141,6 +140,3 @@
 .content .btn:active {
     box-shadow: none;
 }
-
-
-

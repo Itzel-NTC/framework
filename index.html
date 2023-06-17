@@ -1,132 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style/gallery_style.css">
-    <link rel="stylesheet" href="style/card_cli.css">
-    <link rel="stylesheet" href="style/card_frame.css">
-    <link rel="stylesheet" href="style/logo.css">
-    <link rel="stylesheet" href="style/source_code.css">
-    <link rel="stylesheet" href="style/documentation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">
     <title>FRAMEWORK</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/logo.css">
+    <link rel="stylesheet" href="style/card_cli.css">
+    <link rel="stylesheet" href="style/button_doc.css">
+    <link rel="stylesheet" href="style/button_code.css">
+    <link rel="stylesheet" href="style/gallery.css">
+    <link rel="stylesheet" href="style/card_frame.css">
+    <link rel="stylesheet" href="style/welcome.css">
+
 </head>
 <body>
-    <header>
-        <div id="logo">
-            <button data-text="Awesome" class="button">
-                <span class="actual-text">&nbsp;FRAMEWORK&nbsp;</span>
-                <span class="hover-text" aria-hidden="true">&nbsp;FRAMEWORK&nbsp;</span>
-            </button>
+<!-- Navbar -->
+<div class="navbar">
+    <button class="left_button" onclick="window.location.href='#inicio'">
+    <span class="actual-text">&nbsp;framework&nbsp;</span>
+    <span class="hover-text" aria-hidden="true">&nbsp;framework&nbsp;</span>
+    </button>
+        <div class="right-buttons">
+            <a href="#inicio">Inicio</a>
+            <a href="#funciones">Funciones</a>
+            <a href="#objetivo">Objetivo</a>
         </div>
-        <ul>
-            <li><a href="#">INICIO </a></li>
-            <li><a href="#">FUNCIONES </a></li>
-            <li><a href="#">OBJETIVO </a></li>
-        </ul>
-    </header>
+</div>
 
-    <div class="gallery">
-        <img src="image/imagen1.jpg" alt="framework">
-        <img src="image/imagen2.jpg" alt="framework">
-        <img src="image/imagen3.png" alt="framework">
-        <img src="image/imagen4.png" alt="framework">
+<!-- Sección de Inicio -->
+<div id="inicio" class="section section1">
+    <div class="welcomes">
+        <div class="welcome">
+            <div class="welcome__container">
+                <p class="welcome__container__text">
+                ¡Bienvenido(a),
+                </p>
+                <ul class="welcome__container__list">
+                <li class="welcome__container__list__item">desarrollador !</li>
+                <li class="welcome__container__list__item">al mundo del desarrollo web !</li>
+                <li class="welcome__container__list__item">apasionado de la programación !</li>
+                <li class="welcome__container__list__item">al futuro del desarrollo web !</li>
+                </ul>
+            </div>
+        </div>
     </div>
-
     <div class="card_cli">
         <div class="tools">
             <div class="circle">
-                <span class="red box"></span>
+            <span class="red box"></span>
             </div>
             <div class="circle">
-                <span class="yellow box"></span>
+            <span class="yellow box"></span>
             </div>
             <div class="circle">
-                <span class="green box"></span>
+            <span class="green box"></span>
             </div>
         </div>
         <div class="card_content">
-            <h2>Un Framework es una herramienta de software </h2>
-            <h2>que proporciona una estructura y un conjunto </h2>
-            <h2>de funcionalidades para el desarrollo de </h2>
-            <h2>aplicaciones</h2>
+        <h2>Un Framework es una herramienta de software </h2>
+        <h2>que proporciona una estructura y un conjunto </h2>
+        <h2>de funcionalidades para el desarrollo de </h2>
+        <h2>aplicaciones</h2>
         </div>
     </div>
+    <div class="buttons_doc_git">
+    <button onclick="window.location.href='#123'" class="button_doc">Documento</button>
+    <button onclick="window.location.href='https://github.com/pxnditxyr/botyrest'" class="button_code">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 0.296997C5.37 0.296997 0 5.67 0 12.297C0 17.6 3.438 22.097 8.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.504C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.389 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.706 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24 17.592 24 12.297C24 5.67 18.627 0.296997 12 0.296997Z" fill="white"></path>
+        </svg>
+        <span class="text"> Codigo </span>
+    </button>
+    </div>
+    <div class="gallery">
+    <img src="image/imagen1.jpg" alt="framework">
+    <img src="image/imagen2.jpg" alt="framework">
+    <img src="image/imagen3.png" alt="framework">
+    <img src="image/imagen4.png" alt="framework">
+    </div>
+</div>
 
-        <!-- Documentation -->
-        <button class="button_doc">
-            Documento
-        </button>
-
-        <!-- Source code -->
-        <button class="button_code">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 0.296997C5.37 0.296997 0 5.67 0 12.297C0 17.6 3.438 22.097 8.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.504C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.389 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.706 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24 17.592 24 12.297C24 5.67 18.627 0.296997 12 0.296997Z" fill="white"></path>
-            </svg>
-            <p class="text">Codigo Fuente</p>
-        </button>
-
-
-
-
-
-
-    <div id="funtion" class="grid-container">
-        <div class="card_frame">
-            <div class="content">
-                <p class="heading"> Conexión a Base de Datos </p>
-                <p class="para">
-                    <svg width="100%" height="10em" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#F2F2F2" style="width: 100%; height: 100%;">
-                    <path d="M4 6v6s0 3 7 3 7-3 7-3V6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <path d="M11 3c7 0 7 3 7 3s0 3-7 3-7-3-7-3 0-3 7-3zM11 21c-7 0-7-3-7-3v-6M17.306 17.113l.909-1.927a.312.312 0 01.57 0l.91 1.927 2.032.311c.261.04.365.376.177.568l-1.471 1.5.347 2.118c.044.272-.229.48-.462.351l-1.818-1-1.818 1c-.233.129-.506-.079-.462-.351l.347-2.118-1.47-1.5c-.19-.192-.085-.528.176-.568l2.033-.31z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                </p>
-                <button class="btn">Leer</button>
-            </div>
-        </div>
-        <div class="card_frame">
-            <div class="content">
-                <p class="heading"> Conexión a Servidores </p>
-                <p class="para">
-                    <svg width="100%" height="10em" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#F2F2F2" style="width: 100%; height: 100%;">
-                    <path d="M6 18.01l.01-.011M6 6.01l.01-.011" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <path d="M2 9.4V2.6a.6.6 0 01.6-.6h18.8a.6.6 0 01.6.6v6.8a.6.6 0 01-.6.6H2.6a.6.6 0 01-.6-.6zM2 21.4v-6.8a.6.6 0 01.6-.6h18.8a.6.6 0 01.6.6v6.8a.6.6 0 01-.6.6H2.6a.6.6 0 01-.6-.6z" stroke="currentColor"></path>
-                    </svg>
-                </p>
-                <button class="btn">Leer</button>
-            </div>
-        </div>
-        <div class="card_frame">
-            <div class="content">
-                <p class="heading"> Conexión a Base de ORM </p>
-                <p class="para">
-                    <svg width="100%" height="10em" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#F2F2F2" style="width: 100%; height: 100%;">
-                        <path d="M19 16v6m0 0l3-3m-3 3l-3-3M4 6v6s0 3 7 3 7-3 7-3V6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M11 3c7 0 7 3 7 3s0 3-7 3-7-3-7-3 0-3 7-3zM11 21c-7 0-7-3-7-3v-6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                </p>
-                <button class="btn">Leer</button>
-            </div>
-        </div>
-        <div class="card_frame">
-            <div class="content">
-                <p class="heading"> Conexión a servidores Locales </p>
-                <p class="para">
-                    <svg width="100%" height="10em" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#F2F2F2" style="width: 100%; height: 100%;">
-                    <path d="M3 19h9m9 0h-9m0 0v-6m0 0h6V5H6v8h6zM9 9.01l.01-.011M12 9.01l.01-.011" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                </p>
-                <button class="btn">Leer</button>
-            </div>
+<!-- Sección de Acerca de -->
+<div id="funciones" class="section section2">
+    <div class="card_frame">
+        <div class="content">
+            <p class="heading"> Conexión a Base de Datos </p>
+            <p class="para">
+                <svg width="100%" height="10em" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#F2F2F2" style="width: 100%; height: 100%;">
+                <path d="M4 6v6s0 3 7 3 7-3 7-3V6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M11 3c7 0 7 3 7 3s0 3-7 3-7-3-7-3 0-3 7-3zM11 21c-7 0-7-3-7-3v-6M17.306 17.113l.909-1.927a.312.312 0 01.57 0l.91 1.927 2.032.311c.261.04.365.376.177.568l-1.471 1.5.347 2.118c.044.272-.229.48-.462.351l-1.818-1-1.818 1c-.233.129-.506-.079-.462-.351l.347-2.118-1.47-1.5c-.19-.192-.085-.528.176-.568l2.033-.31z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </p>
+            <button class="btn">Leer</button>
         </div>
     </div>
+    <div class="card_frame">
+        <div class="content">
+            <p class="heading"> Conexión a Servidores </p>
+            <p class="para">
+                <svg width="100%" height="10em" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#F2F2F2" style="width: 100%; height: 100%;">
+                <path d="M6 18.01l.01-.011M6 6.01l.01-.011" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M2 9.4V2.6a.6.6 0 01.6-.6h18.8a.6.6 0 01.6.6v6.8a.6.6 0 01-.6.6H2.6a.6.6 0 01-.6-.6zM2 21.4v-6.8a.6.6 0 01.6-.6h18.8a.6.6 0 01.6.6v6.8a.6.6 0 01-.6.6H2.6a.6.6 0 01-.6-.6z" stroke="currentColor"></path>
+                </svg>
+            </p>
+            <button class="btn">Leer</button>
+        </div>
+    </div>
+    <div class="card_frame">
+        <div class="content">
+            <p class="heading"> Conexión a Base de ORM </p>
+            <p class="para">
+                <svg width="100%" height="10em" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#F2F2F2" style="width: 100%; height: 100%;">
+                    <path d="M19 16v6m0 0l3-3m-3 3l-3-3M4 6v6s0 3 7 3 7-3 7-3V6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M11 3c7 0 7 3 7 3s0 3-7 3-7-3-7-3 0-3 7-3zM11 21c-7 0-7-3-7-3v-6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </p>
+            <button class="btn">Leer</button>
+        </div>
+    </div>
+    <div class="card_frame">
+        <div class="content">
+            <p class="heading"> Conexión a servidores Locales </p>
+            <p class="para">
+                <svg width="100%" height="10em" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#F2F2F2" style="width: 100%; height: 100%;">
+                <path d="M3 19h9m9 0h-9m0 0v-6m0 0h6V5H6v8h6zM9 9.01l.01-.011M12 9.01l.01-.011" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </p>
+            <button class="btn">Leer</button>
+        </div>
+    </div>
+</div>
+
+<!-- Sección de Servicios -->
+<div id="objetivo" class="section section3">
+
+    <h2>Servicios</h2>
+    <p>Esta es la sección de los servicios que ofrecemos.</p>
 
 
+
+
+</div>
+
+<!-- Sección de Registro -->
+<div id="registro" class="section section4">
+    <h2>Registro</h2>
+    <p>Esta es la sección de registro para los usuarios.</p>
+<!-- Aquí puedes agregar el formulario de registro -->
+</div>
 
 
 

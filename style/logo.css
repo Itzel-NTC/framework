@@ -2,34 +2,86 @@
     --purple-color: #8758FF;
     --blue-color: #5CB8E4;
     --gray-color: #181818;
+    --white-color: #F2F2F2;
 }
 
-/* === removing default button style ===*/
-.button {
+.navbar {
+    overflow: hidden;
+    background-color: var(--gray-color);
+    height: 100px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar button {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar .right-buttons {
+    float: right;
+    margin-top: 25px;
+    margin-right: 65px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: var(--purple-color);
+    transition:  .5s;
+    color: white;
+    border-radius: 25px;
+}
+
+/* Estilos CSS para pantallas más pequeñas */
+@media screen and (max-width: 600px) {
+    .navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+    }
+}
+
+.navbar .left_button {
     margin: 0;
     height: auto;
     background: transparent;
     padding: 0;
     border: none;
-}
-
-  /* button styling */
-.button {
-    --border-right: 8px;
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+  
+  .left_button {
+    --border-right: 6px;
     --text-stroke-color: rgba(255,255,255,0.6);
-    --animation-color: #8758FF;
+    --animation-color: var(--purple-color);
     --fs-size: 2em;
-    letter-spacing: 8px;
+    letter-spacing: 3px;
     text-decoration: none;
     font-size: var(--fs-size);
-    font-family: "Arial";
     position: relative;
     text-transform: uppercase;
     color: transparent;
     -webkit-text-stroke: 1px var(--text-stroke-color);
-}
-  /* this is the text, when you hover on button */
-.hover-text {
+  }
+  
+  .hover-text {
     position: absolute;
     box-sizing: border-box;
     content: attr(data-text);
@@ -39,10 +91,35 @@
     border-right: var(--border-right) solid var(--animation-color);
     overflow: hidden;
     transition: 0.5s;
-    -webkit-text-stroke: 1px var(--animation-color);
+    -webkit-text-stroke: 0.1px var(--animation-color);
+  }
+  
+.left_button .hover-text {
+    animation: fadeInOut 10s ease-in-out infinite;
 }
-  /* hover */
-.button:hover .hover-text {
-    width: 100%;
-    filter: drop-shadow(0 0 23px var(--animation-color))
+
+@keyframes fadeInOut {
+    0% {
+        width: 0%;
+        filter: none;
+    }
+    50% {
+        width: 100%;
+        filter: drop-shadow(0 0 23px var(--animation-color));
+    }
+    100% {
+        width: 0%;
+        filter: none;
+    }
 }
+
+
+@media only screen and (max-width: 600px) {
+    .left_button {
+        font-size: var(--fs-size);
+    }
+}
+
+
+
+

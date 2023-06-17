@@ -1,0 +1,31 @@
+:root {
+    --purple-color: #8758FF;
+    --blue-color: #5CB8E4;
+    --gray-color: #181818;
+    --white-color: #F2F2F2;
+}
+
+.section1 .button_doc {
+    color: var(--purple-color);
+    text-decoration: none;
+    border: 2px solid var(--purple-color);
+    padding: 13px 50px;
+    font-size: 17px;
+    font-weight:900;
+    background: transparent;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+    left: 150px;
+    top: 245%;
+    border-radius: 25px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.section1 .button_doc:hover {
+    color: white;
+    background-color: var(--purple-color);
+}
+
+.section1 .button_doc:hover::before {
+    width: 160%;
+}
