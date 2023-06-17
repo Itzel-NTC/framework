@@ -16,16 +16,20 @@
 
 .section1 {
     background-color: var(--blue-color);
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .section2 {
 background-color: var(--gray-color);
+font-family: 'Ubuntu', sans-serif;
 }
 
 .section3 {
 background-color: var(--blue-color);
+font-family: 'Ubuntu', sans-serif;
 }
 
 .section4 {
-background-color: var(--purple-color);
+background-color: var(--white-color);
+font-family: 'Ubuntu', sans-serif;
 }
