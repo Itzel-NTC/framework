@@ -1,0 +1,287 @@
+:root {
+    --purple-color: #8758FF;
+    --blue-color: #5CB8E4;
+    --gray-color: #181818;
+    --white-color: #F2F2F2;
+}
+
+.card1 {
+    position: absolute;
+    width: 220px;
+    height: 320px;
+    background: #8BD3ED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.card1::before,
+.card1::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #D1C28F;
+    transition: all 0.5s;
+}
+
+.card1::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+}
+
+.card1::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100%  0 15px;
+}
+
+.card1:hover::before,
+.card1:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
+.card1:hover:after {
+    content: "Ha sido diseñado para ser accesible para desarrolladores de todos los niveles de habilidad y conocimientos. La interfaz de línea de comandos (CLI) es intuitiva y fácil de usar.";
+    font-size: 17px;
+    left: 20px;
+}
+
+/* card 2 flexibilidad */
+
+.card2 {
+    position: absolute;
+    width: 220px;
+    height: 320px;
+    background: #8BD3ED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    left: 390px;
+}
+.card2::before,
+.card2::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #D1C28F;
+    transition: all 0.5s;
+}
+
+.card2::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+}
+
+.card2::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100%  0 15px;
+}
+
+.card2:hover::before,
+.card2:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
+.card2:hover:after {
+    content: "El framework es altamente flexible y permite a los desarrolladores personalizar todo, desde las rutas y controladores hasta la base de datos y modelos.";
+    font-size: 17px;
+    left: 20px;
+}
+
+/* card 3 facilidad de uso */
+
+.card3 {
+    position: absolute;
+    width: 220px;
+    height: 320px;
+    background: #8BD3ED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    left: 650px;
+}
+.card3::before,
+.card3::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #D1C28F;
+    transition: all 0.5s;
+}
+
+.card3::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+}
+
+.card3::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100%  0 15px;
+}
+
+.card3:hover::before,
+.card3:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
+.card3:hover:after {
+    content: "Proporciona una interfaz de línea de comandos (CLI) intuitiva que guía a los desarrolladores en cada etapa del desarrollo de la aplicación. Además, ofrece documentación clara para una implementación sencilla.";
+    font-size: 17px;
+    left: 20px;
+}
+
+/* card 4 Construcción eficiente del backend */
+
+.card4 {
+    position:absolute;
+    width: 220px;
+    height: 320px;
+    background: #8BD3ED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    left: 910px;
+}
+.card4::before,
+.card4::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #D1C28F;
+    transition: all 0.5s;
+}
+
+.card4::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+}
+
+.card4::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100%  0 15px;
+}
+
+.card4:hover::before,
+.card4:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
+.card4:hover:after {
+    content: "Está especialmente diseñado para facilitar la creación del backend de aplicaciones web. Proporciona soporte para RestFul APIs, lo que permite a los desarrolladores crear servicios web eficientes.";
+    font-size: 17px;
+    left: 20px;
+}
+
+/* card 5 seguridad  */
+.card5 {
+    position:relative;
+    width: 220px;
+    height: 320px;
+    background: #8BD3ED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    left: 1040px;
+}
+.card5::before,
+.card5::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #D1C28F;
+    transition: all 0.5s;
+}
+
+.card5::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+}
+
+.card5::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100%  0 15px;
+}
+
+.card5:hover::before,
+.card5:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
+.card5:hover:after {
+    content: "La seguridad es una de las principales preocupaciones de cualquier aplicación web. Tu framework incorpora medidas de seguridad robustas para proteger la aplicación web de cualquier posible ataque o vulnerabilidad.";
+    font-size: 17px;
+    left: 20px;
+}

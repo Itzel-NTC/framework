@@ -10,8 +10,8 @@
     cursor: pointer;
     transition: 400ms;
     position: relative;
-    left: 14%;
-    top: 250%;
+    left: 10%;
+    top: 245%;
     font-family: 'Ubuntu', sans-serif;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.2);
 }
