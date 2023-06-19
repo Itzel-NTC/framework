@@ -1,0 +1,49 @@
+:root {
+    --purple-color: #8758FF;
+    --blue-color: #5CB8E4;
+    --gray-color: #181818;
+    --white-color: #F2F2F2;
+}
+body{
+    margin: 0;
+}
+.funtion1 {
+    padding: 60px 150px;
+    background-color: #B2C8D6;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+}
+.funtion1 p{
+    top: 900px;
+}
+.funtion2 {
+    padding: 60px 150px;
+    background-color: #9EB4D3;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.funtion3 {
+    padding: 60px 150px;
+    background-color: #B2C8D6;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+}
+.funtion4 {
+    padding: 60px 150px;
+    background-color: #9EB4D3;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+}

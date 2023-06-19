@@ -4,10 +4,13 @@
     --gray-color: #181818;
     --white-color: #F2F2F2;
 }
-
+body{
+    margin: 0;
+}
   /* Estilos CSS para las secciones */
 .section {
     height: 835px;
+    margin: 0;
     color: var(--white-color);
     display: flex;
     flex-direction: column;

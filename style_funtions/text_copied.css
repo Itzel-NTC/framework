@@ -1,0 +1,35 @@
+.input-container {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    background-color: #0F172A;
+    padding: 3px 200px;
+    border-radius: 25px;
+    top: 215px;
+    left: 370px;
+
+  }
+  
+  .input-container .bash-text {
+    font-size: 18px;
+    color: white;
+  }
+  
+  .input-container .bash-text .user {
+    color: #E879F9;
+  }
+  
+  .input-container .bash-text .vm {
+    color: #2DD4BF;
+  }
+  
+  .input-container .bash-text .char {
+    color: #A78BFA;
+  }
+  
+  .input-container input[type=text].input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+  }
