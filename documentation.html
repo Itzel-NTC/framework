@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">
+    <title>Funciones </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/logo.css">
+    <link rel="stylesheet" href="style_pg_funtion.css">
+    <link rel="stylesheet" href="style_funtions/copied.css">
+    <link rel="stylesheet" href="style_funtions/text_copied.css">
+</head>
+<body>
+    <!-- Navbar -->
+  <div class="navbar"
+    <button class="left_button" onclick="window.location.href='index.html'">
+      <span class="actual-text">&nbsp;framework&nbsp;</span>
+      <span class="hover-text" aria-hidden="true">&nbsp;framework&nbsp;</span>
+    </button>
+    <div class="right-buttons">
+        <a href="index.html">Inicio</a>
+        <a href="index.html#funciones">Funciones</a>
+        <a href="index.html#objetivo">Objetivo</a>
+    </div>
+  </div>
+
+  <div class="documentation_container">
+
+      <div id="installation" class="documentation_article">
+        <h2> Instalación del CLI de BotyRest </h2>
+        <p> Descripción del CLI de BotyRest </p>
+        <p> El CLI de BotyRest es una herramienta de línea de comandos que proporciona una interfaz de usuario para crear aplicaciones BotyRest. </p>
+        <p> El CLI de BotyRest se puede instalar a través de npm. </p>
+        <p> Para instalar el CLI de BotyRest, abra una ventana de terminal y ejecute el siguiente comando: </p>
+        <pre class="pre-code">
+          <code class="code-bash">$ npm i -g botyrest-cli</code>
+        </pre>
+        <p> Una vez que se haya instalado el CLI de BotyRest, puede usarlo para crear una nueva aplicación BotyRest. </p>
+      </div>
+
+      <div id="creation" class="documentation_article">
+        <h2> Crear una nueva aplicación BotyRest </h2>
+
+        <p> Para esto se debe ejecutar el siguiente comando: </p>
+        <pre class="pre-code">
+          <code class="code-bash">$ botyrest </code>
+        </pre>
+
+        <p> Se debe seleccionar la primera opcion que es: Create New Project </p>
+        <div class="image-container">
+          <img
+            src="https://i.imgur.com/jLPAGdw.png"
+            alt="botyrest-cli"
+          >
+        </div>
+          
+      </div>
+
+      <div id="database-connection" class="documentation_article">
+        <h2> Conexión a la base de datos </h2>
+        <p> Para poder conectarse a la base de datos se debe ejecutar el siguiente comando: </p>
+
+        <pre class="pre-code">
+          <code class="code-bash">$ botyrest </code>
+        </pre>
+
+        <p> Se debe seleccionar la segunda opcion que es: </p>
+        <pre class="pre-code">
+          <code class="code-bash"> Connect to Database </code>
+        </pre>
+
+        <p> Se debe ingresar los datos de la base de datos en tu .env </p>
+        <p> Ademas se debe ejecutar el siguiente comando: </p>
+        <pre class="pre-code">
+          <code class="code-bash">$ npm i </code>
+        </pre>
+      </div>
+
+
+      <div id="create-module" class="documentation_article">
+        <h2> Crear un nuevo módulo </h2>
+        <p> Para crear un nuevo módulo se debe ejecutar el siguiente comando: </p>
+
+        <pre class="pre-code">
+          <code class="code-bash">$ botyrest </code>
+        </pre>
+
+        <p> Se debe seleccionar la tercera opcion que es: </p>
+        <pre class="pre-code">
+          <code class="code-bash"> Create New Module </code>
+        </pre>
+
+        <p> Se debe ingresar el nombre del módulo </p>
+        <p> No olvide que una vez finalizado debe modificar su create dto, y su entity, esto para que pueda poner los attributos necesarios para su módulo </p>
+
+        
+      </div>
+
+      <div id="create-entity" class="documentation_article">
+        <h2> Crear una nueva entidad </h2>
+        <p> Para crear una nueva entidad se debe ejecutar el siguiente comando: </p>
+
+        <pre class="pre-code">
+          <code class="code-bash">$ botyrest </code>
+        </pre>
+
+        <p> Se debe seleccionar la cuarta opcion que es: </p>
+        <pre class="pre-code">
+          <code class="code-bash"> Create New Entity </code>
+        </pre>
+        <p> Se debe ingresar el nombre de la entidad </p>
+        <p> Despues debe ingresar su ruta, por ejemplo: ./src/modules/mi-modulo </p>
+        <p> No olvide que una vez finalizado debe crear sus DTOs y lo que necesite para su entidad </p>
+        
+      </div>
+
+      <div id="create-controller" class="documentation_article">
+        <h2> Crear un nuevo controlador </h2>
+        <p> Para crear un nuevo controlador se debe ejecutar el siguiente comando: </p>
+
+        <pre class="pre-code">
+          <code class="code-bash">$ botyrest </code>
+        </pre>
+
+        <p> Se debe seleccionar la quinta opcion que es: </p>
+        <pre class="pre-code">
+          <code class="code-bash"> Create New Controller </code>
+        </pre>
+
+        <p> Se debe ingresar el nombre del controlador </p>
+        <p> Despues debe ingresar su ruta, por ejemplo: ./src/modules/mi-modulo </p>
+        <p> No olvide que una vez finalizado debe crear sus DTOs, entidades y servicios y lo que necesite para su controlador </p>
+      </div>
+
+      <div id="create-example" class="documentation_article">
+        <h2> Crear un nuevo ejemplo para un modulo </h2>
+        <p> Para crear un nuevo ejemplo para un modulo se debe ejecutar el siguiente comando: </p>
+
+        <pre class="pre-code">
+          <code class="code-bash">$ botyrest </code>
+        </pre>
+
+        <p> Se debe seleccionar la sexta opcion que es: </p>
+        <pre class="pre-code">
+          <code class="code-bash"> Create New Module Example (CRUD) </code>
+        </pre>
+
+        <p> Se debe ingresar el nombre del modulo </p>
+      </div>
+    </div>
+
+</body>
+</html>

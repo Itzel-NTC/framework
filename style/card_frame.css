@@ -17,6 +17,7 @@
     align-items: center;
     justify-content: center;
     width: 300px;
+    height: 500px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     padding: 10px;
     overflow: hidden;
@@ -33,6 +34,7 @@
     align-items: center;
     justify-content: center;
     width: 300px;
+    height: 500px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     padding: 10px;
     overflow: hidden;
@@ -49,6 +51,7 @@
     align-items: center;
     justify-content: center;
     width: 300px;
+    height: 500px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     padding: 10px;
     overflow: hidden;
@@ -65,13 +68,48 @@
     align-items: center;
     justify-content: center;
     width: 300px;
+    height: 500px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     padding: 10px;
     overflow: hidden;
     border-radius: 30px;
     transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
     margin-left:1100px;
-    margin-top: 190px;
+    margin-top: 210px;
+    z-index: 1;
+}
+
+.card_frame:nth-child(5) {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 500px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 30px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    margin-left: 1450px;
+    margin-top: 210px;
+    z-index: 1;
+}
+
+.card_frame:nth-child(6) {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 500px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 30px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    margin-left: 1800px;
+    margin-top: 210px;
     z-index: 1;
 }
 
@@ -103,26 +141,26 @@
 .content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
+    padding: 20px;
     color: #e8e8e8;
     transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
 .content .heading {
     font-weight: 700;
-    font-size: 23px;
+    font-size: 1.8rem;
 }
 
 .content .para {
-    line-height: 1.5;
-    margin-left: 40px;
 }
 
 .content .btn {
     color: #e8e8e8;
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 15px;
     font-weight: 600;
     border: none;
     cursor: pointer;
